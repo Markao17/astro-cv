@@ -13,7 +13,7 @@ import vercel from '@astrojs/vercel/serverless'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.me',
+	site: 'https://marcoperalta.com',
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		tailwind({
@@ -44,5 +44,10 @@ export default defineConfig({
 	output: 'server',
 	adapter: vercel({
 		webAnalytics: { enabled: true }
-	})
+	}),
+	vite: {
+		ssr: {
+			noExternal: ['lucide-astro'] // 👈 important for the ".astro" extension error
+		}
+	}
 })
