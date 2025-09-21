@@ -9,6 +9,7 @@ import PostPreview from '@/components/blog/PostPreview.astro'
 
 import { Image } from 'astro:assets'
 import astro from '../assets/about-astro.png'
+import marco from '../assets/marco.jpg'
 
 import { getAllPosts, sortMDByDate } from '@/utils'
 
@@ -26,27 +27,16 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 	<div class='flex w-full flex-col gap-y-10'>
 		<section class='flex flex-col items-center gap-y-7'>
 			<Image
-				src={astro}
+				src={marco}
 				alt='profile photo'
-				class='h-28 w-auto rounded-full bg-[#FFBE98] p-2'
+				class='h-36 w-36 object-cover rounded-full bg-[#FFBE98]'
 				loading='eager'
 			/>
 
 			<div class='flex flex-col items-center gap-y-4'>
-				<h1 class='text-3xl font-bold'>Lorem ipsum dolor</h1>
-				<a
-					href='https://github.com/srleom/astro-theme-resume.git'
-					class='flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md'
-				>
-					<span class='relative flex items-center justify-center'>
-						<span
-							class='absolute inline-flex h-2 w-2 animate-ping rounded-full border border-green-400 bg-green-400 opacity-75'
-						></span>
-						<span class='relative inline-flex h-2 w-2 rounded-full bg-green-400'></span>
-					</span>
-
-					<p class='font-medium'>Get free template</p>
-				</a>
+				<h1 class='text-3xl font-bold'>
+					Marco Peralta 🚀
+				</h1>
 				<div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
 					<Label title='Lorem Ipsum'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
@@ -87,10 +77,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 		<Section title='About'>
 			<p class='text-muted-foreground'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque quia omnis
-				consectetur, voluptas praesentium veniam blanditiis ratione asperiores accusantium laborum
-				odit commodi quis deserunt incidunt et dolor iure ut! Lorem ipsum dolor sit, amet
-				consectetur adipisicing elit. Alias quia, doloribus ut beatae perspiciatis voluptatibus.
+				I'm a web developer with a passion for building scalable and efficient systems. I'm a quick learner and always looking for new challenges. I'm a team player and always willing to help others.
 			</p>
 		</Section>
 		{
@@ -109,7 +96,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 		<Section title='Experience'>
 			<Card
-				heading='Lorem Ipsum'
+				heading='Web Developer'
 				subheading='Sit amet consectetur'
 				date='Dec 2022 - Nov 2023'
 				imagePath='/src/assets/about-astro.png'
