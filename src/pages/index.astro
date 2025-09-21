@@ -80,26 +80,13 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 				I'm a web developer with a passion for building scalable and efficient systems. I'm a quick learner and always looking for new challenges. I'm a team player and always willing to help others.
 			</p>
 		</Section>
-		{
-			allPostsByDate.length > 0 && (
-				<Section title='Posts'>
-					<ul class='flex flex-col gap-y-2'>
-						{allPostsByDate.map((p) => (
-							<li class='flex flex-col gap-x-2 sm:flex-row'>
-								<PostPreview post={p} />
-							</li>
-						))}
-					</ul>
-				</Section>
-			)
-		}
 
 		<Section title='Experience'>
 			<Card
 				heading='Web Developer'
 				subheading='Sit amet consectetur'
 				date='Dec 2022 - Nov 2023'
-				imagePath='/src/assets/about-astro.png'
+				icon='briefcase'
 				altText='Lorem, ipsum dolor sit'
 				imageClass='h-12 w-auto md:-left-16'
 			>
@@ -116,7 +103,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 				heading='Lorem Ipsum'
 				subheading='Sit amet consectetur'
 				date='Dec 2022 - Nov 2023'
-				imagePath='/src/assets/about-astro.png'
+				icon='briefcase'
 				altText='Lorem, ipsum dolor sit'
 				imageClass='h-12 w-auto md:-left-16'
 			/>
@@ -127,7 +114,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 				heading='Lorem Ipsum'
 				subheading='Sit amet consectetur'
 				date='Dec 2022 - Nov 2023'
-				imagePath='/src/assets/about-astro.png'
+				icon='graduation-cap'
 				altText='Lorem, ipsum dolor sit'
 				imageClass='h-12 w-auto md:-left-16'
 			>
@@ -144,7 +131,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 				heading='Lorem Ipsum'
 				subheading='Sit amet consectetur'
 				date='Dec 2022 - Nov 2023'
-				imagePath='/src/assets/about-astro.png'
+				icon='graduation-cap'
 				altText='Lorem, ipsum dolor sit'
 				imageClass='h-12 w-auto md:-left-16'
 			/>
