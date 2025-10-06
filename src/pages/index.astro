@@ -13,10 +13,10 @@ import marco from '../assets/marco.jpg'
 
 import { getAllPosts, sortMDByDate } from '@/utils'
 
-const languages = ['lorem', 'ipsum']
-const frontend = ['lorem', 'ipsum', 'lorem', 'ipsum', 'lorem', 'ipsum', 'lorem']
-const backend = ['lorem', 'ipsum', 'lorem', 'ipsum']
-const others = ['lorem', 'ipsum', 'lorem', 'ipsum', 'lorem']
+const languages = ['Portuguese (native)', 'English (fluent)']
+const frontend = ['HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Typescript', 'Tailwind', 'Gutenberg', 'Astro', 'Vue.js']
+const backend = ['PHP', 'Twig', 'WordPress', 'Node.js', 'MySQL']
+const others = ['Git', 'CI/CD', 'Agile', 'Scrum', 'Kanban', 'Leadership', 'Mentoring', 'Team Management']
 
 const MAX_POSTS = 10
 const allPosts = await getAllPosts()
@@ -35,10 +35,10 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 			<div class='flex flex-col items-center gap-y-4'>
 				<h1 class='text-3xl font-bold'>
-					Marco Peralta 🚀
+					Marco Peralta 🐙
 				</h1>
 				<div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-					<Label title='Lorem Ipsum'>
+					<Label title='Frontend Engineer & Team Lead'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
 							><path
 								fill='currentColor'
@@ -46,7 +46,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 							></path></svg
 						>
 					</Label>
-					<Label title='Ipsum'>
+					<Label title='Lisbon, Portugal'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
 							><path
 								fill='currentColor'
@@ -57,7 +57,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 					<Label
 						title='Connect on Linkedin'
 						as='a'
-						href='https://www.linkedin.com/in/example/'
+						href='https://www.linkedin.com/in/marco-peralta-49512b2b/'
 						target='_blank'
 					>
 						<svg
@@ -77,108 +77,146 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 		<Section title='About'>
 			<p class='text-muted-foreground'>
-				I'm a web developer with a passion for building scalable and efficient systems. I'm a quick learner and always looking for new challenges. I'm a team player and always willing to help others.
+				I’m a Frontend Engineer and Team Lead with over 10 years of experience building scalable, performant, and design-driven web applications. I specialize in bridging the gap between engineering and design, creating digital experiences that are both visually appealing and technically solid. I enjoy mentoring teams, leading agile processes, and delivering high-profile projects for global clients.
 			</p>
 		</Section>
 
 		<Section title='Experience'>
 			<Card
-				heading='Web Developer'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
+				heading='Senior Developer / Head of Operations'
+				subheading='WidgiLabs'
+				date='2015 – Present'
 				icon='briefcase'
-				altText='Lorem, ipsum dolor sit'
+				altText='professional experience'
 				imageClass='h-12 w-auto md:-left-16'
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
 					<li>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-						molestiae laboriosam pariatur!
-
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
+						Led the development of 20+ WordPress and React-based applications for clients like UNICEF, Unbabel, Agenda Cultural de Lisboa, Tribeca Film Festival, Vortal, and more.
+					</li>
+					<li>
+						Implemented CI/CD pipelines, Git best practices, and custom WordPress theme architecture.
+					</li>
+					<li>
+						Mentored developers, driving their professional growth and improving team velocity.
+					</li>
+					<li>
+						Actively involved in leadership decisions, sprint planning, and KPI tracking.
 					</li>
 				</ul>
 			</Card>
 			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
+				heading='Frontend & UI/UX Trainer'
+				subheading='FLAG'
+				date='2019 – Present'
 				icon='briefcase'
-				altText='Lorem, ipsum dolor sit'
+				altText='professional experience'
 				imageClass='h-12 w-auto md:-left-16'
-			/>
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>Teach HTML, CSS, and JavaScript in frontend modules.</li>
+					<li>Train students in UI/UX best practices and responsive design for the web.</li>
+					<li>Guide and evaluate final projects, focusing on practical, production-ready solutions.</li>
+				</ul>
+			</Card>
+			<Card
+				heading='Freelance Graphic Designer (Live TV)'
+				subheading='SIC – International Television'
+				date='2013 – 2015'
+				icon='briefcase'
+				altText='professional experience'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>Designed live broadcast graphics for multiple TV shows.</li>
+					<li>Delivered on-air visuals under pressure in a live environment.</li>
+				</ul>
+			</Card>
+			<Card
+				heading='Freelance Filmmaker'
+				subheading='GEFCO International Convention'
+				date='2014'
+				icon='briefcase'
+				altText='professional experience'
+				imageClass='h-12 w-auto md:-left-16'
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>Produced, edited, and delivered audiovisual content for a corporate event</li>
+				</ul>
+			</Card>
 		</Section>
 
 		<Section title='Education'>
 			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
+				heading='Postgraduate Degree in Audiovisual and Multimedia'
+				subheading='ESCS - Escola Superior de Comunicação Social'
+				date='2012 - 2013'
 				icon='graduation-cap'
-				altText='Lorem, ipsum dolor sit'
+				altText='education experience'
 				imageClass='h-12 w-auto md:-left-16'
 			>
-				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-						molestiae laboriosam pariatur!
-
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-					</li>
-				</ul>
 			</Card>
 			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
+				heading='Bachelor in Design'
+				subheading='IADE - European University of Design'
+				date='2009 - 2012'
 				icon='graduation-cap'
-				altText='Lorem, ipsum dolor sit'
+				altText='education experience'
 				imageClass='h-12 w-auto md:-left-16'
 			/>
 		</Section>
 
 		<Section title='Projects'>
-			<div class='flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0'>
+			<div class='grid grid-cols-2 gap-y-3 sm:gap-x-3'>
 				<ProjectCard
-					href='https://www.google.com'
-					heading='Consectetur'
-					subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-					imagePath='/src/assets/coming-soon.png'
-					altText='Example'
-					class='w-full sm:w-1/2'
+					href='https://www.donativos.unicef.pt'
+					heading='Donativos UNICEF'
+					subheading='Designer + Frontend Dev (donation flow, UX optimization)'
+					imagePath='/src/assets/donativos.png'
+					altText='Donativos UNICEF'
+					class='w-full'
 				/>
 				<ProjectCard
-					as='div'
-					heading='Coming soon...'
-					subheading=''
-					imagePath='/src/assets/coming-soon.png'
-					altText='Lorem, ipsum dolor sit'
-					class='w-full sm:w-1/2'
+					href="https://www.grandeconsumo.com"
+					heading='Grande Consumo'
+					subheading='Frontend Lead (news platform redesign)'
+					imagePath='/src/assets/grande-consumo.png'
+					altText='Grande Consumo'
+					class='w-full'
+				/>
+				<ProjectCard
+					as="div"
+					heading='Tribeca Film Festival Lisboa Website'
+					subheading='Frontend + Design'
+					imagePath='/src/assets/tribeca.png'
+					altText='Tribeca Film Festival Lisboa Website'
+					class='w-full'
+				/>
+				<ProjectCard
+					href="https://www.store.vortal.biz"
+					heading='Vortal Store'
+					subheading='WooCommerce frontend'
+					imagePath='/src/assets/vortal.png'
+					altText='Vortal Store'
+					class='w-full'
+				/>
+				<ProjectCard
+					as="div"
+					heading='Colóniasdeférias.pt'
+					subheading='Gutenberg-based booking front end'
+					imagePath='/src/assets/colonias.png'
+					altText='Colónias de férias'
+					class='w-full'
+				/>
+				<ProjectCard
+					href="https://www.unbabel.com"
+					heading='Unbabel website'
+					subheading='Frontend + Backend + Team Lead'
+					imagePath='/src/assets/unbabel.png'
+					altText='Unbabel website'
+					class='w-full'
 				/>
 			</div>
-		</Section>
-
-		<Section title='Certifications'>
-			<Card
-				as='a'
-				heading='Lorem ipsum, dolor sit amet consectetur adipisicing.'
-				subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta magni consequuntur corrupti.'
-				date='Mar 2024 - Mar 2024'
-				imagePath='/src/assets/about-astro.png'
-				altText='Lorem, ipsum dolor sit'
-				imageClass='h-11 w-auto md:-left-16'
-				href='https://www.google.com'
-			/>
-			<Card
-				as='a'
-				heading='Lorem ipsum, dolor sit amet'
-				subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta.'
-				date='Mar 2029 - Mar 2032'
-				imagePath='/src/assets/about-astro.png'
-				altText='Lorem, ipsum dolor sit'
-				imageClass='h-11 w-auto md:-left-16'
-				href='https://www.google.com'
-			/>
 		</Section>
 
 		<Section title='Skills'>
@@ -188,17 +226,4 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 			<SkillLayout title='Others' skills={others} />
 		</Section>
 	</div>
-	<a
-		href='https://github.com/srleom/astro-theme-resume.git'
-		class='mt-16 flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md'
-	>
-		<span class='relative flex items-center justify-center'>
-			<span
-				class='absolute inline-flex h-2 w-2 animate-ping rounded-full border border-green-400 bg-green-400 opacity-75'
-			></span>
-			<span class='relative inline-flex h-2 w-2 rounded-full bg-green-400'></span>
-		</span>
-
-		<p class='font-medium'>Get free template</p>
-	</a>
 </PageLayout>
