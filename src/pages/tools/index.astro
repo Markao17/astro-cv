@@ -6,11 +6,18 @@ import Button from '@/components/Button.astro'
 const DESIGN = [
 	{
 		name: 'Figma',
-		description: 'Design Tool',
+		description: 'Interface design and prototyping tool used for web and UI/UX layouts.',
 		href: 'https://www.figma.com/',
 		iconPath: 'figma',
-		iconBgColour: '#000001'
-	}
+		iconBgColour: '#1E1E1E',
+	},
+	{
+		name: 'Adobe Photoshop',
+		description: 'For image adjustments, mockups, and asset preparation.',
+		href: 'https://www.adobe.com/products/photoshop.html',
+		iconPath: 'photoshop',
+		iconBgColour: '#001E36',
+	},
 ]
 
 const PRODUCTIVITY = [
@@ -22,37 +29,82 @@ const PRODUCTIVITY = [
 		iconBgColour: '#414350'
 	},
 	{
-		name: 'Notion',
-		description: 'Note Taking',
-		href: 'https://www.notion.so/product',
-		iconPath: 'notion',
-		iconBgColour: '#EFEFEE'
+		name: 'ClickUp',
+		description: 'Project management and sprint planning tool.',
+		href: 'https://clickup.com/',
+		iconPath: 'clickup',
+		iconBgColour: '#7B68EE',
 	},
 	{
-		name: 'Obsidian',
-		description: 'Long-form Writing',
-		href: 'https://obsidian.md/',
-		iconPath: 'obsidian',
-		iconBgColour: '#7A3EE8'
+		name: 'Slack',
+		description: 'Team communication and collaboration.',
+		href: 'https://slack.com/',
+		iconPath: 'slack',
+		iconBgColour: '#611F69',
+	},
+	{
+		name: 'Notion',
+		description: 'Documentation, notes, and team knowledge base.',
+		href: 'https://www.notion.so/product',
+		iconPath: 'notion',
+		iconBgColour: '#EFEFEE',
 	}
 ]
 
 const DEVELOPMENT = [
 	{
 		name: 'VS Code',
-		description: 'IDE',
+		description: 'Primary IDE for frontend and WordPress development.',
 		href: 'https://code.visualstudio.com/',
 		iconPath: 'vscode',
-		iconBgColour: '#2C2C32'
+		iconBgColour: '#007ACC',
 	},
 	{
+		name: 'Cursor',
+		description: 'AI-assisted code editor for faster iteration and refactors.',
+		href: 'https://cursor.sh/',
+		iconPath: 'cursor',
+		iconBgColour: '#1E1E1E',
+	},
+	{
+		name: 'GitKraken',
+		description: 'Visual Git client for repo management and branching.',
+		href: 'https://www.gitkraken.com/',
+		iconPath: 'gitkraken',
+		iconBgColour: '#0E6E68',
+	},
+	{
+		name: 'GitHub',
+		description: 'Code hosting, version control, and CI/CD pipelines.',
+		href: 'https://github.com/',
+		iconPath: 'github',
+		iconBgColour: '#181717',
+	},
+	{
+		name: 'FileZilla',
+		description: 'FTP client for quick file transfer and deployment.',
+		href: 'https://filezilla-project.org/',
+		iconPath: 'filezilla',
+		iconBgColour: '#C60000',
+	},
+]
+
+const UTILITIES = [
+	{
 		name: 'ChatGPT',
-		description: 'AI',
+		description: 'AI assistant for brainstorming, documentation, and code help.',
 		href: 'https://chat.openai.com/',
 		iconPath: 'chatgpt',
-		iconBgColour: '#06A67F'
-	}
-]
+		iconBgColour: '#74AA9C',
+	},
+	{
+		name: 'Buddy',
+		description: 'CI/CD tool for automated WordPress and frontend deployments.',
+		href: 'https://buddy.works/',
+		iconPath: 'buddy',
+		iconBgColour: '#0080FF',
+	},
+];
 ---
 
 <PageLayout meta={{ title: 'Home' }}>
@@ -82,6 +134,7 @@ const DEVELOPMENT = [
 			<ToolSection title='Design' tools={DESIGN} />
 			<ToolSection title='Productivity' tools={PRODUCTIVITY} />
 			<ToolSection title='Development' tools={DEVELOPMENT} />
+			<ToolSection title='Utilities' tools={UTILITIES} />
 		</div>
 	</div>
 </PageLayout>
